@@ -114,14 +114,14 @@
             this.label28 = new System.Windows.Forms.Label();
             this.panel37 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnCreateTable = new System.Windows.Forms.Button();
-            this.btnOutTable = new System.Windows.Forms.Button();
-            this.btnNewTable = new System.Windows.Forms.Button();
-            this.btnDeleteTable = new System.Windows.Forms.Button();
             this.panel41 = new System.Windows.Forms.Panel();
+            this.btnOutTable = new System.Windows.Forms.Button();
+            this.btnCreateTable = new System.Windows.Forms.Button();
+            this.btnNewTable = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
             this.lblIDTable = new System.Windows.Forms.Label();
             this.txtIDTable = new System.Windows.Forms.TextBox();
+            this.btnDeleteTable = new System.Windows.Forms.Button();
             this.panel44 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.txtTableName = new System.Windows.Forms.TextBox();
@@ -131,6 +131,8 @@
             this.clBan = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tpTaiKhoan = new System.Windows.Forms.TabPage();
+            this.label23 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.lstAccount = new System.Windows.Forms.ListView();
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -140,10 +142,12 @@
             this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label23 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtCMND = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label34 = new System.Windows.Forms.Label();
             this.txtNoiSinh = new System.Windows.Forms.TextBox();
@@ -179,10 +183,6 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tssNhanvien = new System.Windows.Forms.ToolStripStatusLabel();
             this.tssThoiGian = new System.Windows.Forms.ToolStripStatusLabel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtCMND = new System.Windows.Forms.TextBox();
-            this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.radAdminAccount.SuspendLayout();
             this.tpDoanhThu.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -215,6 +215,7 @@
             this.panel10.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel13.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel28.SuspendLayout();
@@ -224,7 +225,6 @@
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.panel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // radAdminAccount
@@ -1099,47 +1099,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Thông tin bàn ";
             // 
-            // btnCreateTable
-            // 
-            this.btnCreateTable.Location = new System.Drawing.Point(307, 25);
-            this.btnCreateTable.Name = "btnCreateTable";
-            this.btnCreateTable.Size = new System.Drawing.Size(147, 36);
-            this.btnCreateTable.TabIndex = 2;
-            this.btnCreateTable.Text = "Thêm bàn";
-            this.btnCreateTable.UseVisualStyleBackColor = true;
-            this.btnCreateTable.Click += new System.EventHandler(this.btnCreateTable_Click);
-            // 
-            // btnOutTable
-            // 
-            this.btnOutTable.Location = new System.Drawing.Point(744, 24);
-            this.btnOutTable.Name = "btnOutTable";
-            this.btnOutTable.Size = new System.Drawing.Size(120, 36);
-            this.btnOutTable.TabIndex = 4;
-            this.btnOutTable.Text = "Thoát";
-            this.btnOutTable.UseVisualStyleBackColor = true;
-            this.btnOutTable.Click += new System.EventHandler(this.btnOutTable_Click);
-            // 
-            // btnNewTable
-            // 
-            this.btnNewTable.Location = new System.Drawing.Point(615, 25);
-            this.btnNewTable.Name = "btnNewTable";
-            this.btnNewTable.Size = new System.Drawing.Size(125, 36);
-            this.btnNewTable.TabIndex = 3;
-            this.btnNewTable.Text = "Làm mới";
-            this.btnNewTable.UseVisualStyleBackColor = true;
-            this.btnNewTable.Click += new System.EventHandler(this.btnNewTable_Click);
-            // 
-            // btnDeleteTable
-            // 
-            this.btnDeleteTable.Enabled = false;
-            this.btnDeleteTable.Location = new System.Drawing.Point(458, 25);
-            this.btnDeleteTable.Name = "btnDeleteTable";
-            this.btnDeleteTable.Size = new System.Drawing.Size(153, 36);
-            this.btnDeleteTable.TabIndex = 1;
-            this.btnDeleteTable.Text = "Xóa bàn";
-            this.btnDeleteTable.UseVisualStyleBackColor = true;
-            this.btnDeleteTable.Click += new System.EventHandler(this.btnDeleteTable_Click);
-            // 
             // panel41
             // 
             this.panel41.Controls.Add(this.btnOutTable);
@@ -1152,6 +1111,36 @@
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(867, 80);
             this.panel41.TabIndex = 5;
+            // 
+            // btnOutTable
+            // 
+            this.btnOutTable.Location = new System.Drawing.Point(744, 24);
+            this.btnOutTable.Name = "btnOutTable";
+            this.btnOutTable.Size = new System.Drawing.Size(120, 36);
+            this.btnOutTable.TabIndex = 4;
+            this.btnOutTable.Text = "Thoát";
+            this.btnOutTable.UseVisualStyleBackColor = true;
+            this.btnOutTable.Click += new System.EventHandler(this.btnOutTable_Click);
+            // 
+            // btnCreateTable
+            // 
+            this.btnCreateTable.Location = new System.Drawing.Point(307, 25);
+            this.btnCreateTable.Name = "btnCreateTable";
+            this.btnCreateTable.Size = new System.Drawing.Size(147, 36);
+            this.btnCreateTable.TabIndex = 2;
+            this.btnCreateTable.Text = "Thêm bàn";
+            this.btnCreateTable.UseVisualStyleBackColor = true;
+            this.btnCreateTable.Click += new System.EventHandler(this.btnCreateTable_Click);
+            // 
+            // btnNewTable
+            // 
+            this.btnNewTable.Location = new System.Drawing.Point(615, 25);
+            this.btnNewTable.Name = "btnNewTable";
+            this.btnNewTable.Size = new System.Drawing.Size(125, 36);
+            this.btnNewTable.TabIndex = 3;
+            this.btnNewTable.Text = "Làm mới";
+            this.btnNewTable.UseVisualStyleBackColor = true;
+            this.btnNewTable.Click += new System.EventHandler(this.btnNewTable_Click);
             // 
             // panel14
             // 
@@ -1179,6 +1168,17 @@
             this.txtIDTable.ReadOnly = true;
             this.txtIDTable.Size = new System.Drawing.Size(207, 27);
             this.txtIDTable.TabIndex = 0;
+            // 
+            // btnDeleteTable
+            // 
+            this.btnDeleteTable.Enabled = false;
+            this.btnDeleteTable.Location = new System.Drawing.Point(458, 25);
+            this.btnDeleteTable.Name = "btnDeleteTable";
+            this.btnDeleteTable.Size = new System.Drawing.Size(153, 36);
+            this.btnDeleteTable.TabIndex = 1;
+            this.btnDeleteTable.Text = "Xóa bàn";
+            this.btnDeleteTable.UseVisualStyleBackColor = true;
+            this.btnDeleteTable.Click += new System.EventHandler(this.btnDeleteTable_Click);
             // 
             // panel44
             // 
@@ -1262,6 +1262,30 @@
             this.tpTaiKhoan.Text = "Quản lý tài khoản";
             this.tpTaiKhoan.UseVisualStyleBackColor = true;
             // 
+            // label23
+            // 
+            this.label23.BackColor = System.Drawing.Color.LightPink;
+            this.label23.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label23.ForeColor = System.Drawing.Color.Maroon;
+            this.label23.Location = new System.Drawing.Point(3, 3);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(892, 35);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "QUẢN LÝ TÀI KHOẢN NHÂN VIÊN";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel10
+            // 
+            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel10.Controls.Add(this.lstAccount);
+            this.panel10.Location = new System.Drawing.Point(9, 273);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(884, 206);
+            this.panel10.TabIndex = 2;
+            // 
             // lstAccount
             // 
             this.lstAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1309,7 +1333,6 @@
             // 
             // columnHeader14
             // 
-            this.columnHeader14.DisplayIndex = 3;
             this.columnHeader14.Text = "Số điện thoại";
             this.columnHeader14.Width = 115;
             // 
@@ -1328,29 +1351,9 @@
             this.columnHeader17.Text = "Trạng thái";
             this.columnHeader17.Width = 150;
             // 
-            // label23
+            // columnHeader25
             // 
-            this.label23.BackColor = System.Drawing.Color.LightPink;
-            this.label23.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label23.ForeColor = System.Drawing.Color.Maroon;
-            this.label23.Location = new System.Drawing.Point(3, 3);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(892, 35);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "QUẢN LÝ TÀI KHOẢN NHÂN VIÊN";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel10
-            // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel10.Controls.Add(this.lstAccount);
-            this.panel10.Location = new System.Drawing.Point(9, 273);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(884, 206);
-            this.panel10.TabIndex = 2;
+            this.columnHeader25.Text = "CMND";
             // 
             // groupBox5
             // 
@@ -1388,6 +1391,33 @@
             this.panel6.Size = new System.Drawing.Size(879, 202);
             this.panel6.TabIndex = 5;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.label4);
+            this.panel13.Controls.Add(this.txtCMND);
+            this.panel13.Location = new System.Drawing.Point(286, 42);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(284, 40);
+            this.panel13.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(34, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 16);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "CMND:";
+            // 
+            // txtCMND
+            // 
+            this.txtCMND.Location = new System.Drawing.Point(91, 7);
+            this.txtCMND.Name = "txtCMND";
+            this.txtCMND.ShortcutsEnabled = false;
+            this.txtCMND.Size = new System.Drawing.Size(190, 27);
+            this.txtCMND.TabIndex = 0;
             // 
             // panel11
             // 
@@ -1633,6 +1663,7 @@
             this.radAnAccount.TabIndex = 2;
             this.radAnAccount.Text = "Khóa";
             this.radAnAccount.UseVisualStyleBackColor = true;
+          
             // 
             // label1
             // 
@@ -1728,38 +1759,6 @@
             this.tssThoiGian.Name = "tssThoiGian";
             this.tssThoiGian.Size = new System.Drawing.Size(0, 17);
             // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.label4);
-            this.panel13.Controls.Add(this.txtCMND);
-            this.panel13.Location = new System.Drawing.Point(286, 42);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(284, 40);
-            this.panel13.TabIndex = 15;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(34, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 16);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "CMND:";
-            // 
-            // txtCMND
-            // 
-            this.txtCMND.Location = new System.Drawing.Point(91, 7);
-            this.txtCMND.Name = "txtCMND";
-            this.txtCMND.ShortcutsEnabled = false;
-            this.txtCMND.Size = new System.Drawing.Size(190, 27);
-            this.txtCMND.TabIndex = 0;
-            // 
-            // columnHeader25
-            // 
-            this.columnHeader25.DisplayIndex = 5;
-            this.columnHeader25.Text = "CMND";
-            // 
             // frm_QuanLyHeThong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1816,6 +1815,8 @@
             this.panel10.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel29.ResumeLayout(false);
@@ -1834,8 +1835,6 @@
             this.panel9.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

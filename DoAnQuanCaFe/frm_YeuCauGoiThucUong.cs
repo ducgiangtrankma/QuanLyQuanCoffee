@@ -62,7 +62,7 @@ namespace DoAnQuanCaFe
 
         public void LoadTable()
         {
-            flbTable.Controls.Clear();
+            flbTable.Controls.Clear();// reset lai flb để load full
             //load bàn lên trên panel
             List<TableDTO> tablelist = TableBUS.GetAllListTable();
 
@@ -398,6 +398,11 @@ namespace DoAnQuanCaFe
                     MessageBox.Show("Hệ thống đang bảo trì, bạn quay lại sau nhé!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
                 }
             }
+        }
+
+        private void lstBill_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

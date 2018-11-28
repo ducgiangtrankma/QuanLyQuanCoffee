@@ -27,8 +27,8 @@ namespace DoAnQuanCaFe
             }
             catch
             {
-                //MessageBox.Show("Hiện tại không có bàn nào được tạo hóa đơn. Bạn vui lòng quay lại sau!");
-                //return;
+               MessageBox.Show("HIỆN TẠI KHÔNG CÓ BÀN NÀO ĐƯỢC TẠO HÓA ĐƠN. BẠN VUI LÒNG QUAY LẠI SAU!");
+                return;
             }
         }
 

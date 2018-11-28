@@ -84,23 +84,25 @@
             // 
             // btnThoat
             // 
+            this.btnThoat.BackColor = System.Drawing.Color.White;
             this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.Location = new System.Drawing.Point(293, 207);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(90, 34);
             this.btnThoat.TabIndex = 2;
             this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnDangNhap
             // 
+            this.btnDangNhap.BackColor = System.Drawing.Color.White;
             this.btnDangNhap.Location = new System.Drawing.Point(178, 207);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(109, 35);
             this.btnDangNhap.TabIndex = 1;
             this.btnDangNhap.Text = "Đăng nhập";
-            this.btnDangNhap.UseVisualStyleBackColor = true;
+            this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // panel3
@@ -163,7 +165,7 @@
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.LightPink;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.Maroon;

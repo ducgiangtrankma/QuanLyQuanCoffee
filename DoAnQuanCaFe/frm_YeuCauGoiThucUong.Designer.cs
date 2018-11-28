@@ -287,6 +287,7 @@
             this.lstBill.TabIndex = 0;
             this.lstBill.UseCompatibleStateImageBehavior = false;
             this.lstBill.View = System.Windows.Forms.View.Details;
+            this.lstBill.SelectedIndexChanged += new System.EventHandler(this.lstBill_SelectedIndexChanged);
             this.lstBill.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lstBill_MouseClick);
             // 
             // columnHeader1
